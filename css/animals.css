@@ -1,0 +1,132 @@
+* {
+  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+body{
+  background-color: #a8a8a8ed;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1280px;
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* Hide the images by default */
+.mySlides{
+  display: none;
+}
+.images{
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #f03b09cc;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+  line-height: 35px;
+}
+.text-end>p{
+  color: #f03b09cc;
+  font-size: 23px;
+  margin: 10px;
+ text-decoration: none;
+}
+.text-end>p:hover{
+   text-decoration-line:underline;
+}
+.imgtext>img {
+  left: 100px;
+  top:30%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  box-shadow: 5px 10px 8px #0c0808;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.text-back{
+  text-decoration: none;
+  color: white ;
+  width : 100px;
+  height: 50px;
+  background-color:#f03b09cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+position: fixed;
+bottom: 40px;
+right: 50px;
+animation:a  1500ms infinite;
+}
+@keyframes a {
+  0%{}
+  100% { right: 25px }
+}
+.text-back:hover{
+  color:#f03b09cc;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px tomato;
+}

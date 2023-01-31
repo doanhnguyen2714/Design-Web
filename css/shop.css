@@ -1,0 +1,174 @@
+* {
+    box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+  #wrapper {
+    background-color: #efeaea;
+      background-size: cover ;
+      height: auto;
+      width : 100%;
+
+  }
+  
+  .container{ 
+      max-width: 1100px;
+      margin: 0px auto;
+      height: 55px; 
+  }
+  #logo img{
+      max-width: 90px;
+      height: auto;
+  }
+  .name{
+      color: white ;
+      font-weight: bolder;
+      padding: 16px;
+      font-size: 20px;
+      color:rgb(222, 67, 20);
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      justify-items: center;
+  }
+  
+  #main-menu{
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0; 
+  }
+  
+  /* Tạo cho li cha một cái position làm chuẩn */
+  #main-menu li{
+      position: relative;
+  }
+  
+  #main-menu li a{
+      color: rgb(247, 240, 240);
+      display: block;
+      padding: 15px 20px;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  
+  #main-menu ul.sub-menu{
+      position: absolute;
+      background-color: #0000;
+      width:180px;
+      list-style: none; 
+      padding: 0px;
+      border: 1px solid rgb(82, 63, 31);
+      display: none;/* giúp ẩn cái menu con */
+  }
+  
+  /* khi chỉ chuột tới li thì sẽ hiện menu cấp trực tiếp của nó  */
+  #main-menu li:hover>ul.sub-menu{
+      display: block;
+  }
+  
+  /* tác động vào các thẻ a nằm trong cái ul.sub-menu */
+  #main-menu ul.sub-menu a{
+      padding: 5px 15px;
+      font-size: 20px;
+      border-bottom: 1.5px solid rgb(82, 63, 31);
+      background-color: #efeaea;
+  }
+  
+  /* làm mất boder bottom của li cuối cùng(li:last-child) */
+  #main-menu ul.sub-menu li:last-child a{
+      border: none;
+  }
+  
+  /* tạo hover */
+  #main-menu ul.sub-menu li:hover a{
+      font-size: 25px;
+      color:rgb(222, 67, 20);
+      border-bottom: 1.5px solid rgb(24, 18, 7);
+  }
+  
+          /*  */
+      /*  *//*  */
+  /* Tạo thanh trượt điểm nhấn cho header */
+      /*  *//*  */
+          /*  */
+  #main-menu>li>a{
+      position: relative;  
+      
+  }
+  #main-menu>li>a:hover{
+      color:rgb(222, 67, 20);
+  }
+  #main-menu>li>a::before{
+      content: "";
+      height: 3px;
+      width: 0px;
+      background: rgb(222, 67, 20) ;
+      bottom: 0px;
+      left: 0px;
+      position: absolute;
+      transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);/* tạo độ chậm hiệu ứng */
+  }
+  
+  #main-menu>li:hover>a::before{
+      width: 100%; 
+      color:rgb(222, 67, 20) ;
+  }
+  #intro-img{
+      position: relative; 
+      z-index: -1;
+      margin-top: -60px;
+      padding-top: 50%;
+      background-image: url(./img/0headerrr.jpg);
+      background-size: cover ;
+  }
+  .text-img{
+   position: absolute;
+    color:#ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    flex-direction: column;
+    line-height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+  }
+  .text-img>h1{
+      word-spacing: 15px;
+      -webkit-animation: my 2s infinite;
+       -moz-animation: my 2s infinite; 
+       -o-animation: my 2s infinite; 
+       animation: my 2s infinite;
+  }
+  @-webkit-keyframes my {
+      0% { color: #de4314 ; } 
+      50% { color: #fff ;  } 
+      100% { color:rgb(222, 67, 20) ;  } 
+  }
+  @-moz-keyframes my { 
+      0% { color: hsl(14, 83%, 47%);  } 
+      50% { color: #fff;  }
+      100% { color: hsl(14, 83%, 47%);  } 
+  }
+  @-o-keyframes my { 
+      0% { color: #de4314; } 
+      50% { color: #fff; } 
+      100% { color:rgb(222, 67, 20) ;  } 
+  }
+  @keyframes my { 
+      0% { color: rgb(222, 67, 20);  } 
+      50% { color: #fff;  }
+      100% { color:rgb(222, 67, 20) ;  } 
+  } 
+  .text-img>h2{
+   word-spacing: 10px;
+  }
+  .text-img:hover h1{
+      color:rgb(222, 67, 20) ;
+  }
+  
+  /*end header*/
+  

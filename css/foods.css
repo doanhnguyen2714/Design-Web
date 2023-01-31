@@ -1,0 +1,251 @@
+* {
+    max-width: 1800px;
+}
+
+#khung-bao-ngoai {
+    width: 100%;
+    display: flex;
+    background-color: #f48f73cc;
+}
+
+/* Thông tin */
+
+
+
+/* Thực phẩm */
+#khung-bao-ngoai .thongtin {
+    flex-basis: 70%;
+    width: 100%;
+    align-self: center;
+}
+
+
+#khung-bao-ngoai .thongtin .thucpham .thanhphan {
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#khung-bao-ngoai .thucpham .thanhphan .column1,
+#khung-bao-ngoai .thucpham .thanhphan .column2,
+#khung-bao-ngoai .thucpham .thanhphan .column3 {
+    flex-basis: 33.3%;
+    display: block;
+    border-left: 2px solid #f03b09cc;
+}
+
+#khung-bao-ngoai .thucpham .thanhphan .column1 img,
+#khung-bao-ngoai .thucpham .thanhphan .column2 img,
+#khung-bao-ngoai .thucpham .thanhphan .column3 img {
+    width: 90%;
+    height: 50%;
+    align-items: center;
+    margin: 3px 10px;
+    padding: 10px;
+}
+
+#khung-bao-ngoai h4 {
+    color: #f03b09cc;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#khung-bao-ngoai span {
+    display: block;
+    margin: 0px 20px;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+/* đồng bộ cho cùng 1 hàng */
+.row1 {
+    border-top: 2px solid #f03b09cc;
+}
+
+.row1,
+.row2,
+.row3 {
+    height: 550px;
+    border-bottom: 2px solid #f03b09cc;
+    border-right: 2px solid #f03b09cc;
+}
+
+#khung-bao-ngoai h2 {
+    margin: 10px;
+    text-align: center;
+    color: #f03b09cc;
+    background-color: rgb(70, 248, 153);
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+}
+
+
+/* Thư giản */
+
+
+.title-video {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #f03b09cc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.video video {
+    display: block;
+    width: 80%;
+    background-color: black;
+    height: 600px;
+    border-radius: 30px;
+    margin: auto;
+
+}
+
+
+
+/* Mục lục */
+#mucluc {
+    margin: 0px 10px;
+    padding: 10px 10px;
+    flex-basis: 20%;
+    border-right: 5px solid #f2ecebcc;
+    display: flex;
+    color: #f03b09cc;
+}
+
+#mucluc .heading {
+    font-size: 1.5rem;
+}
+
+#mucluc .heading .mucluc-list a,
+#mucluc .heading .mucluc-list .list-thucpham {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* Tiệm thú y */
+.tiemthuy-list {
+    width: 90%;
+    margin: 0.5rem 0.5rem;
+    background-color: rgb(149, 255, 149);
+    border-radius: 0.5rem;
+
+}
+
+.tiemthuy-list h3 {
+    text-align: center;
+    color: rgb(49, 49, 197);
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border: 0.8rem solid;
+    border-radius: 0.5rem;
+}
+
+.tiemthuy-list img {
+    width: 80%;
+    border-radius: 3rem;
+}
+
+
+
+/* Câu hỏi vui */
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-wrap {
+    background-color: aqua;
+    padding: 3rem 2rem;
+    border-radius: 10%;
+}
+
+.slide-wrap a {
+    box-sizing: border-box;
+    width: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    padding: 0.4rem 0.4rem;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+}
+
+.slide-btn {
+    margin: 1rem 0rem;
+}
+
+.slide-wrap h2 {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+
+.slider {
+    border-radius: 2%;
+    margin-top: 1rem;
+    background: red;
+    color: white;
+    width: 370px;
+    height: 350px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -webkit-scroll-snap-points-x: repeat(300px);
+    -ms-scroll-snap-points-x: repeat(300px);
+    scroll-snap-points-x: repeat(300px);
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+}
+
+.slide {
+    width: 350px;
+    flex-shrink: 0;
+
+}
+
+.slide-content {
+    width: 80%;
+    margin: 10% 10%;
+}
+
+.slides>div:target {
+    transform: scale(0.8);
+}
+
+.btn-submit {
+    width: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width:740px) and (min-width:423px){
+    #mucluc{
+        display: none;
+    }
+    #thongtin{
+        width: cover;
+    }  
+
+
+    
+}
+
