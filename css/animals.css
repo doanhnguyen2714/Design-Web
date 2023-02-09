@@ -1,10 +1,10 @@
 * {
-  box-sizing:border-box;
-    margin:0;
-    padding:0;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-body{
+body {
   background-color: #a8a8a8ed;
 }
 /* Slideshow container */
@@ -16,15 +16,16 @@ body{
 }
 
 /* Hide the images by default */
-.mySlides{
+.mySlides {
   display: none;
 }
-.images{
+.images {
   -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
   filter: blur(3px);
 }
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -46,7 +47,8 @@ body{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #f03b09cc;
 }
 
@@ -61,18 +63,18 @@ body{
   text-align: center;
   line-height: 35px;
 }
-.text-end>p{
+.text-end > p {
   color: #f03b09cc;
   font-size: 23px;
   margin: 10px;
- text-decoration: none;
+  text-decoration: none;
 }
-.text-end>p:hover{
-   text-decoration-line:underline;
+.text-end > p:hover {
+  text-decoration-line: underline;
 }
-.imgtext>img {
+.imgtext > img {
   left: 100px;
-  top:30%;
+  top: 30%;
   position: absolute;
   width: 200px;
   height: 200px;
@@ -92,7 +94,8 @@ body{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -103,30 +106,37 @@ body{
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.text-back{
+.text-back {
   text-decoration: none;
-  color: white ;
-  width : 100px;
+  color: white;
+  width: 100px;
   height: 50px;
-  background-color:#f03b09cc;
+  background-color: #f03b09cc;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-position: fixed;
-bottom: 40px;
-right: 50px;
-animation:a  1500ms infinite;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  animation: a 1500ms infinite;
 }
 @keyframes a {
-  0%{}
-  100% { right: 25px }
+  0% {
+  }
+  100% {
+    right: 25px;
+  }
 }
-.text-back:hover{
-  color:#f03b09cc;
+.text-back:hover {
+  color: #f03b09cc;
   background-color: #f2f2f2;
   box-shadow: 0 3px tomato;
 }
