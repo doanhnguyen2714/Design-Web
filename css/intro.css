@@ -755,7 +755,7 @@ footer .container .noi-dung.about p {
     outline: none;
   }
 
-  /* Form star */
+  /* Footer star */
   footer {
     position: relative;
     width: 100%;
@@ -883,4 +883,5 @@ footer .container .noi-dung.about p {
   #back {
     z-index: 100;
   }
+  
 }

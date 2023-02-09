@@ -1,9 +1,210 @@
 * {
   max-width: 1800px;
+  margin: 0px auto 0px auto;
 }
 
-#khung-bao-ngoai {
+
+
+/* Header Star  */
+#wrapper {
+  background-size: cover;
+  height: auto;
   width: 100%;
+}
+#header {
+  background-color: #fff;
+}
+#header .container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0px auto;
+  height: 55px;
+}
+
+#cum-logo {
+  display: flex;
+}
+#logo img {
+  max-width: 90px;
+  height: auto;
+}
+.name {
+  color: white;
+  font-weight: bolder;
+  padding: 16px;
+  font-size: 16px;
+  color: rgb(222, 67, 20);
+}
+nav {
+  display: flex;
+}
+
+#bar {
+  display: none;
+  text-align: right;
+  cursor: pointer;
+}
+
+#main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tạo cho li cha một cái position làm chuẩn */
+#main-menu li {
+  position: relative;
+}
+
+#main-menu li a {
+  color: #f00;
+  display: block;
+  padding: 16px 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#main-menu ul.sub-menu {
+  position: absolute;
+  background-color: #0000;
+  width: 180px;
+  list-style: none;
+  padding: 0px;
+  border: 1px solid rgb(82, 63, 31);
+  display: none; /* giúp ẩn cái menu con */
+}
+
+/* khi chỉ chuột tới li thì sẽ hiện menu cấp trực tiếp của nó  */
+#main-menu li:hover > ul.sub-menu {
+  display: block;
+}
+
+/* tác động vào các thẻ a nằm trong cái ul.sub-menu */
+#main-menu ul.sub-menu a {
+  background-color: #f2f2f4;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-bottom: 1.5px solid rgb(82, 63, 31);
+}
+
+/* làm mất boder bottom của li cuối cùng(li:last-child) */
+#main-menu ul.sub-menu li:last-child a {
+  border: none;
+}
+
+/* tạo hover */
+#main-menu ul.sub-menu li:hover a {
+  font-size: 25px;
+  color: rgb(222, 67, 20);
+  border-bottom: 1.5px solid rgb(24, 18, 7);
+}
+
+/*  */
+/*  */ /*  */
+/* Tạo thanh trượt điểm nhấn cho header */
+/*  */ /*  */
+/*  */
+#main-menu > li > a {
+  position: relative;
+}
+#main-menu > li > a::before {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background: rgb(222, 67, 20);
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1); /* tạo độ chậm hiệu ứng */
+}
+
+#main-menu > li:hover > a::before {
+  width: 100%;
+  color: rgb(222, 67, 20);
+}
+#intro-img {
+  position: relative;
+  z-index: -1;
+  margin-top: -60px;
+  padding-top: 50%;
+  background-image: url(../img/0headerrr.jpg);
+  background-size: cover;
+}
+.text-img {
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  flex-direction: column;
+  line-height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text-img > h1 {
+  word-spacing: 15px;
+  -webkit-mediaanimation: my 2s infinite;
+  -moz-animation: my 2s infinite;
+  -o-animation: my 2s infinite;
+  animation: my 2s infinite;
+}
+@-webkit-keyframes my {
+  0% {
+    color: #de4314;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: rgb(222, 67, 20);
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: hsl(14, 83%, 47%);
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: hsl(14, 83%, 47%);
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: #de4314;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: rgb(222, 67, 20);
+  }
+}
+@keyframes my {
+  0% {
+    color: rgb(222, 67, 20);
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: rgb(222, 67, 20);
+  }
+}
+.text-img > h2 {
+  word-spacing: 10px;
+}
+.text-img:hover h1 {
+  color: rgb(222, 67, 20);
+}
+
+/* Header End */
+
+
+#khung-bao-ngoai {
   display: flex;
   background-color: #f48f73cc;
 }
@@ -15,6 +216,7 @@
   flex-basis: 70%;
   width: 100%;
   align-self: center;
+  margin: auto;
 }
 
 #khung-bao-ngoai .thongtin .thucpham .thanhphan {
@@ -37,7 +239,7 @@
   width: 90%;
   height: 50%;
   align-items: center;
-  margin: 3px 10px;
+  margin: auto;
   padding: 10px;
 }
 
@@ -112,12 +314,16 @@
 #mucluc .heading {
   font-size: 1.5rem;
 }
-
+#mucluc .heading h1{
+  padding: 30px 0px 30px 0px;
+}
 #mucluc .heading .mucluc-list a,
 #mucluc .heading .mucluc-list .list-thucpham {
   display: block;
+  list-style: disc;
   text-decoration: none;
   color: #000;
+  padding-left: 10px;
 }
 
 /* Tiệm thú y */
@@ -219,11 +425,410 @@ form {
   align-items: center;
 }
 
-@media only screen and (max-width: 740px) and (min-width: 423px) {
+
+/* Footer star */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 50px 20px;
+  background: #f03b09cc;
+  display: flex;
+  font-family: "roboto";
+}
+
+footer .container {
+  display: flex;
+  width: 100%;
+}
+
+footer .container img {
+  width: 200px;
+  height: fit-content;
+  position: relative;
+  margin-right: 30px;
+}
+/* Thiết lập phần giới thiệu */
+footer .container .noi-dung {
+  margin-right: 20px;
+}
+footer .container .noi-dung.about {
+  width: 30%;
+}
+footer .container .noi-dung.about h2 {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #f00;
+}
+footer .container .noi-dung.about p {
+  color: black;
+}
+
+/* Thiết lập phần icon giới thiệu */
+
+.social-icon {
+  margin-top: 20px;
+  display: flex;
+}
+.social-icon li {
+  list-style: none;
+}
+.social-icon li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.social-icon li a:hover {
+  background: #f00;
+}
+.social-icon li a .fa {
+  color: rgb(138, 138, 138);
+  font-size: 20px;
+}
+.links h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Thiết lập phần đường dẫn */
+
+.links h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.links h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #f00;
+}
+.links {
+  position: relative;
+  width: 25%;
+}
+.links ul {
+  display: inline;
+  padding-top: 10px;
+}
+.links ul li {
+  list-style: none;
+  padding-top: 8px;
+}
+.links ul li a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.links ul li a:hover {
+  color: #fff;
+}
+
+/* Thiết lập phần thông tin liên hệ */
+
+.contact h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #f00;
+}
+.contact {
+  width: 45%;
+  margin-right: 0 !important;
+}
+.contact ul {
+  display: inline;
+}
+.contact .info {
+  position: relative;
+}
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contact .info li span {
+  color: black;
+}
+.contact .info li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Footer end */
+
+
+/* Nút back */
+
+#back {
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: #f03b09cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+#back {
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: #f03b09cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+/* mobile */
+@media only screen and (max-width:739px) {
+  #header {
+    width: 100%;
+    background-color: #fff;
+  }
+  #header .name {
+    width: auto;
+  }
+  #header #cum-logo {
+    width: 70%;
+    height: auto;
+    left: 0rem;
+    margin-left: 0%;
+    font-size: 0.5rem;
+  }
+  #main-menu {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+  }
+  #main-menu li {
+    background-color: #fff;
+    display: inline;
+  }
+  #main-menu .sub-menu {
+    top: 0rem;
+    right: 9.9rem;
+    color: #fff;
+    z-index: 1;
+  }
+  #header-thugon {
+    position: relative;
+    width: 10rem;
+    height: auto;
+  }
+  #header .icon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    top: 0;
+  }
+  #bar {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    color: #f03b09cc;
+  }
+
+  #intro-img {
+    top: 3.8rem;
+    text-align: center;
+  }
+  .text-img h2 {
+    display: none;
+  }
+
+/* content */
+
+
+
+
   #mucluc {
     display: none;
   }
   #thongtin {
-    width: cover;
+    width: 100%;
+    margin: auto;
+  }
+
+/* footer star */
+  footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f03b09cc;
+    display: inline-block;
+    flex-direction: column;
+    font-family: "roboto";
+    padding: 20px 5px 20px 5px;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer .container img {
+    display: none; /* làm cho logo mất */
+    width: 200px;
+    height: fit-content;
+    position: relative;
+    margin-right: 30px;
+  }
+  /* Thiết lập phần giới thiệu */
+  footer .container .noi-dung {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+  }
+  footer .container .noi-dung.about {
+    width: 100%;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    left: 10px;
+  }
+}
+
+
+
+/* tablet */
+@media only screen and (max-width: 1040px) and (min-width: 740px) {
+
+  #header {
+    width: 100%;
+    background-color: #fff;
+  }
+  #header .name {
+    width: auto;
+  }
+  #header #cum-logo {
+    width: 70%;
+    height: auto;
+    left: 0rem;
+    margin-left: 0%;
+    font-size: 0.5rem;
+  }
+  #main-menu {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+  }
+  #main-menu li {
+    background-color: #fff;
+  }
+  #main-menu .sub-menu {
+    top: 0rem;
+    right: 11.5rem;
+    color: #fff;
+    z-index: 1;
+  }
+  #header-thugon {
+    position: relative;
+    width: 10rem;
+    height: auto;
+  }
+  #header .icon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    top: 0;
+  }
+  #bar {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    color: #f03b09cc;
+  }
+
+  #intro-img {
+    top: 3.8rem;
+    text-align: center;
+  }
+
+  /* Header end */
+
+  #mucluc {
+    display: none;
+  }
+  #thongtin {
+    width: 100%;
+    margin: auto;
+  }
+
+
+
+
+
+  /* footer */
+  footer{
+    display: none;
+    justify-content: left;
+    
+  }
+  footer img {
+    display: none;
+  }
+
+  footer .noi-dung contact {
+  }
+
+  #back {
+    z-index: 100;
   }
 }
