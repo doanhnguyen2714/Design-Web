@@ -669,8 +669,11 @@ footer .container .noi-dung.about p {
     top: 3.8rem;
     text-align: center;
   }
+  .text-img h1{
+    font-size: 20px;
+  }
   .text-img h2 {
-    display: none;
+display: none;
   }
   /* Header end */
 
