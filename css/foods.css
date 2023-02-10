@@ -1,7 +1,4 @@
-* {
-  max-width: 1800px;
-  margin: 0px auto 0px auto;
-}
+
 
 
 
@@ -549,7 +546,9 @@ footer .container .noi-dung .about p {
 }
 
 /* Thiết lập phần thông tin liên hệ */
-
+.noi-dung .contact{
+  margin: 0px;
+}
 .contact h2 {
   position: relative;
   color: #fff;
@@ -571,6 +570,7 @@ footer .container .noi-dung .about p {
 }
 .contact ul {
   display: inline;
+  margin: 0px;
 }
 .contact .info {
   position: relative;
@@ -629,6 +629,7 @@ footer .container .noi-dung .about p {
 
 /* mobile */
 @media only screen and (max-width:739px) {
+  
   #header {
     width: 100%;
     background-color: #fff;
@@ -689,7 +690,9 @@ footer .container .noi-dung .about p {
 
 /* content */
 
-
+.thanhphan{
+  font-size: 10px;
+}
 
 
   #mucluc {
@@ -702,6 +705,7 @@ footer .container .noi-dung .about p {
 
 /* footer star */
   footer {
+    margin:0px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -720,7 +724,7 @@ footer .container .noi-dung .about p {
   }
 
   footer .container img {
-    display: none; /* làm cho logo mất */
+    display: none;
     width: 200px;
     height: fit-content;
     position: relative;
@@ -731,15 +735,96 @@ footer .container .noi-dung .about p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 20px;
+    align-self: start;
   }
-  footer .container .noi-dung.about {
+  footer .container .noi-dung .about {
     width: 100%;
     padding: 0;
     display: block;
     flex-direction: column;
     left: 10px;
   }
+  /* Thiết lập phần đường dẫn */
+
+.links h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.links h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #f00;
+}
+.links {
+  position: relative;
+  width: 25%;
+}
+.links ul {
+  display: inline;
+  padding-top: 10px;
+}
+.links ul li {
+  list-style: none;
+  padding-top: 8px;
+}
+.links ul li a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.links ul li a:hover {
+  color: #fff;
+}
+
+/* Thiết lập phần thông tin liên hệ */
+
+.contact h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: #f00;
+}
+.contact {
+  width: 45%;
+  margin-right: 0 !important;
+}
+.contact ul {
+  display: inline;
+}
+.contact .info {
+  position: relative;
+}
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contact .info li span {
+  color: black;
+}
+.contact .info li a {
+  color: black;
+  text-decoration: none;
+}
 }
 
 
