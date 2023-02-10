@@ -453,16 +453,16 @@ footer .container img {
 footer .container .noi-dung {
   margin-right: 20px;
 }
-footer .container .noi-dung.about {
+footer .container .noi-dung .about {
   width: 30%;
 }
-footer .container .noi-dung.about h2 {
+footer .container .noi-dung .about h2 {
   position: relative;
   color: white;
   font-weight: 500;
   margin-bottom: 15px;
 }
-footer .container .noi-dung.about h2:before {
+footer .container .noi-dung .about h2:before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -471,7 +471,7 @@ footer .container .noi-dung.about h2:before {
   height: 2px;
   background: #f00;
 }
-footer .container .noi-dung.about p {
+footer .container .noi-dung .about p {
   color: black;
 }
 
