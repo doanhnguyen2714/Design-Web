@@ -385,6 +385,9 @@ nav {
   color: #000;
   padding-left: 10px;
 }
+#mucluc .heading .mucluc-list .list-thucpham a:hover{
+  color: #f03b09cc;
+}
 
 /* Tiệm thú y */
 .tiemthuy-list {
