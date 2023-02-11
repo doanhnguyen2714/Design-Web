@@ -633,6 +633,27 @@ footer .container .noi-dung.about p {
 .slide {
   font-size: 20px;
 }
+.btn-submit{
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ff7650cc;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 15px 0 #b22700cc ;
+  transition: 0.1s;
+}
+.btn-submit:active{
+  box-shadow: none;
+  transform: translateY(15px);
+
+
+}
 
 /* Mobile*/
 @media only screen and (max-width: 740px) {

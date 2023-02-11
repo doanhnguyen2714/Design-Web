@@ -447,7 +447,7 @@ section
   .formBox
   .inputBox
   input[type="submit"]:hover {
-  background: #ff568c;
+  background:red;
 }
 
 /* Thiết Lập Chuyển Động Label Cho Thẻ Input */
