@@ -620,8 +620,12 @@ footer .container .noi-dung.about p {
 
 /* question */
 #question {
+  max-width: 900px;
   min-width: 350px;
   margin: auto;
+  height: auto;
+  margin-bottom: 50px;
+
 }
 .slide-wrap h2 {
   text-align: center;
@@ -634,10 +638,14 @@ footer .container .noi-dung.about p {
 }
 .question{
   width: auto;
+  background-color: #ff7350 ;
   font-size: 20px;
   padding: 10px 10px;
-  border: 2px solid #f03b09cc;
+  border: 5px solid #f03b09cc;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
+
 .btn-submit{
   width: 200px;
   height: 80px;
@@ -647,10 +655,10 @@ footer .container .noi-dung.about p {
   align-items: center;
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  background-color: #ff7650cc;
+  background-color: #fe3b00cc;
   border: none;
   border-radius: 40px;
-  box-shadow: 0 15px 0 #b22700cc ;
+  box-shadow: 0 15px 0 #9e2300cc ;
   transition: 0.1s;
 }
 .btn-submit:active{
@@ -725,6 +733,9 @@ footer .container .noi-dung.about p {
 
   #list-menu {
     display: none;
+  }
+  #content{
+    min-width: none;
   }
   /* Footer star */
   footer {
