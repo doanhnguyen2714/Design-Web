@@ -56,10 +56,19 @@
                                 <li><a href="index.html#loinhannhu">Liên hệ</a></li>
                             </ul>
                         </li>
+                            
                     </ul>
                 </div>
+                <a><i class="fa-solid fa-magnifying-glass" id="sreach-icons"></i></a>
                 <i class="fa-solid fa-bars" id="bar"></i>
             </nav>
+            <div id="sreach-bars">
+                <div id="sreach-bar">
+                <input type="text" placeholder="Nơi tìm kiếm những bạn nhỏ">
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            </div>
+            
         </div>
 
         <!-- Header End --> 
@@ -252,6 +261,13 @@
         $(document).ready(function(){
             $('#bar').click(function(){
                 $('#main-menu').slideToggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#sreach-icons').click(function(){
+                $('#sreach-bars').slideToggle();
             });
         });
     </script>

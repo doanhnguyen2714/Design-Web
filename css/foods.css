@@ -2,7 +2,7 @@
 
 
 
-/* Header Star  */
+/* Header Star */
 #wrapper {
   background-size: cover;
   height: auto;
@@ -34,6 +34,55 @@
 }
 nav {
   display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+#sreach-icons{
+  font-size: 20px;
+  color: white;
+  margin-top: 8px;
+  background-color: #f03b09cc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#sreach-bars{
+  display: none;
+}
+#sreach-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#sreach-bar input{
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+  background-color: #f03b09cc;
+  border-radius: 25px;
+  color: white;
+}
+#sreach-bar input::placeholder{
+  color: white;
+  padding-left: 10px;
+  font-size: 15px;
+}
+#sreach-bar a{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f03b09cc;
+}
+#sreach-bar i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
 }
 
 #bar {
@@ -955,8 +1004,6 @@ footer .container .noi-dung .about p {
     display: none;
   }
 
-  footer .noi-dung contact {
-  }
 
   #back {
     z-index: 100;
