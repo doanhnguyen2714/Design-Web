@@ -39,7 +39,7 @@ nav {
   justify-content: space-between;
   justify-items: center;
 }
-#sreach-icons{
+#sreach-icons {
   font-size: 20px;
   color: white;
   margin-top: 8px;
@@ -50,7 +50,7 @@ nav {
   padding-left: 10px;
   padding-top: 10px;
 }
-#sreach-bars{
+#sreach-bars {
   display: none;
 }
 #sreach-bar {
@@ -59,7 +59,7 @@ nav {
   align-items: center;
   margin: auto;
 }
-#sreach-bar input{
+#sreach-bar input {
   width: 70%;
   height: 50px;
   font-size: 20px;
@@ -67,18 +67,18 @@ nav {
   border-radius: 25px;
   color: white;
 }
-#sreach-bar input::placeholder{
+#sreach-bar input::placeholder {
   color: white;
   padding-left: 10px;
   font-size: 15px;
 }
-#sreach-bar a{
+#sreach-bar a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #f03b09cc;
 }
-#sreach-bar i{
+#sreach-bar i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,7 +625,6 @@ footer .container .noi-dung.about p {
   margin: auto;
   height: auto;
   margin-bottom: 50px;
-
 }
 .slide-wrap h2 {
   text-align: center;
@@ -636,9 +635,9 @@ footer .container .noi-dung.about p {
 .slide {
   font-size: 20px;
 }
-.question{
+.question {
   width: auto;
-  background-color: #ff7350 ;
+  background-color: #ff7350;
   font-size: 20px;
   padding: 10px 10px;
   border: 5px solid #f03b09cc;
@@ -646,7 +645,7 @@ footer .container .noi-dung.about p {
   margin-bottom: 10px;
 }
 
-.btn-submit{
+.btn-submit {
   width: 200px;
   height: 80px;
   font-size: 30px;
@@ -654,18 +653,16 @@ footer .container .noi-dung.about p {
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: #fe3b00cc;
   border: none;
   border-radius: 40px;
-  box-shadow: 0 15px 0 #9e2300cc ;
+  box-shadow: 0 15px 0 #9e2300cc;
   transition: 0.1s;
 }
-.btn-submit:active{
+.btn-submit:active {
   box-shadow: none;
   transform: translateY(15px);
-
-
 }
 
 /* Mobile*/
@@ -734,7 +731,7 @@ footer .container .noi-dung.about p {
   #list-menu {
     display: none;
   }
-  #content{
+  #content {
     min-width: none;
   }
   /* Footer star */

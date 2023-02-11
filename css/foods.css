@@ -1,7 +1,3 @@
-
-
-
-
 /* Header Star */
 #wrapper {
   background-size: cover;
@@ -37,7 +33,7 @@ nav {
   justify-content: space-between;
   justify-items: center;
 }
-#sreach-icons{
+#sreach-icons {
   font-size: 20px;
   color: white;
   margin-top: 8px;
@@ -48,7 +44,7 @@ nav {
   padding-left: 10px;
   padding-top: 10px;
 }
-#sreach-bars{
+#sreach-bars {
   display: none;
 }
 #sreach-bar {
@@ -57,7 +53,7 @@ nav {
   align-items: center;
   margin: auto;
 }
-#sreach-bar input{
+#sreach-bar input {
   width: 70%;
   height: 50px;
   font-size: 20px;
@@ -65,18 +61,18 @@ nav {
   border-radius: 25px;
   color: white;
 }
-#sreach-bar input::placeholder{
+#sreach-bar input::placeholder {
   color: white;
   padding-left: 10px;
   font-size: 15px;
 }
-#sreach-bar a{
+#sreach-bar a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #f03b09cc;
 }
-#sreach-bar i{
+#sreach-bar i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +245,6 @@ nav {
 
 /* Header End */
 
-
 #khung-bao-ngoai {
   display: flex;
   background-color: lightgrey;
@@ -278,8 +273,8 @@ nav {
 
 #khung-bao-ngoai .thongtin .thucpham .thanhphan .row1,
 #khung-bao-ngoai .thongtin .thucpham .thanhphan .row2,
-#khung-bao-ngoai .thongtin .thucpham .thanhphan .row3{
-  background-color: rgb(255, 190, 169);
+#khung-bao-ngoai .thongtin .thucpham .thanhphan .row3 {
+  background-color: rgb(255, 203, 186);
 }
 
 #khung-bao-ngoai .thucpham .thanhphan .column1 img,
@@ -366,8 +361,8 @@ nav {
 #mucluc .heading {
   font-size: 1.5rem;
 }
-#mucluc .heading h1{
-  font-family: 'Times New Roman', Times, serif;
+#mucluc .heading h1 {
+  font-family: "Times New Roman", Times, serif;
   width: 300px;
   font-size: 40px;
   padding-top: 20px;
@@ -378,7 +373,7 @@ nav {
   font-weight: bold;
   box-shadow: 0 3px rgb(232, 55, 24);
 }
-#mucluc .heading .mucluc-list{
+#mucluc .heading .mucluc-list {
   padding-top: 15px;
   padding-left: 10px;
 }
@@ -490,7 +485,6 @@ form {
   justify-content: center;
   align-items: center;
 }
-
 
 /* Footer star */
 
@@ -615,7 +609,7 @@ footer .container .noi-dung .about p {
 }
 
 /* Thiết lập phần thông tin liên hệ */
-.noi-dung .contact{
+.noi-dung .contact {
   margin: 0px;
 }
 .contact h2 {
@@ -663,7 +657,6 @@ footer .container .noi-dung .about p {
 
 /* Footer end */
 
-
 /* Nút back */
 
 #back {
@@ -697,8 +690,7 @@ footer .container .noi-dung .about p {
 }
 
 /* mobile */
-@media only screen and (max-width:739px) {
-  
+@media only screen and (max-width: 739px) {
   #header {
     width: 100%;
     background-color: #fff;
@@ -757,31 +749,33 @@ footer .container .noi-dung .about p {
     display: none;
   }
 
-/* content */
+  /* content */
 
-.row1, .row2, .row3{
-  width: 300px;
-  margin: auto;
-  border: 2px solid #f03b09cc;
-}
-.thanhphan {
-  font-size: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+  .row1,
+  .row2,
+  .row3 {
+    width: 300px;
+    margin: auto;
+    border: 2px solid #f03b09cc;
+  }
+  .thanhphan {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-#khung-bao-ngoai .thucpham .thanhphan {
-  border-left: 0px solid lightgray ;
-}
-.row1,
-.row2,
-.row3 {
-  height: 360px;
-  border-bottom: 2px solid #f03b09cc;
-  border-right: 2px solid #f03b09cc;
-}
+  #khung-bao-ngoai .thucpham .thanhphan {
+    border-left: 0px solid lightgray;
+  }
+  .row1,
+  .row2,
+  .row3 {
+    height: 360px;
+    border-bottom: 2px solid #f03b09cc;
+    border-right: 2px solid #f03b09cc;
+  }
 
   #mucluc {
     display: none;
@@ -791,9 +785,9 @@ footer .container .noi-dung .about p {
     margin: auto;
   }
 
-/* footer star */
+  /* footer star */
   footer {
-    margin:0px;
+    margin: 0px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -834,92 +828,89 @@ footer .container .noi-dung .about p {
   }
   /* Thiết lập phần đường dẫn */
 
-.links h2 {
-  position: relative;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.links h2::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50%;
-  height: 2px;
-  background: #f00;
-}
-.links {
-  position: relative;
-  width: 25%;
-}
-.links ul {
-  display: inline;
-  padding-top: 10px;
-}
-.links ul li {
-  list-style: none;
-  padding-top: 8px;
-}
-.links ul li a {
-  color: black;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-.links ul li a:hover {
-  color: #fff;
-}
+  .links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .links h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #f00;
+  }
+  .links {
+    position: relative;
+    width: 25%;
+  }
+  .links ul {
+    display: inline;
+    padding-top: 10px;
+  }
+  .links ul li {
+    list-style: none;
+    padding-top: 8px;
+  }
+  .links ul li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .links ul li a:hover {
+    color: #fff;
+  }
 
-/* Thiết lập phần thông tin liên hệ */
+  /* Thiết lập phần thông tin liên hệ */
 
-.contact h2 {
-  position: relative;
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 15px;
+  .contact h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .contact h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #f00;
+  }
+  .contact {
+    width: 45%;
+    margin-right: 0 !important;
+  }
+  .contact ul {
+    display: inline;
+  }
+  .contact .info {
+    position: relative;
+  }
+  .contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  .contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .contact .info li span {
+    color: black;
+  }
+  .contact .info li a {
+    color: black;
+    text-decoration: none;
+  }
 }
-.contact h2::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50%;
-  height: 2px;
-  background: #f00;
-}
-.contact {
-  width: 45%;
-  margin-right: 0 !important;
-}
-.contact ul {
-  display: inline;
-}
-.contact .info {
-  position: relative;
-}
-.contact .info li {
-  display: flex;
-  margin-bottom: 16px;
-}
-.contact .info li span:nth-child(1) {
-  color: #fff;
-  font-size: 20px;
-  margin-right: 10px;
-}
-.contact .info li span {
-  color: black;
-}
-.contact .info li a {
-  color: black;
-  text-decoration: none;
-}
-}
-
-
 
 /* tablet */
 @media only screen and (max-width: 1040px) and (min-width: 740px) {
-
   #header {
     width: 100%;
     background-color: #fff;
@@ -984,26 +975,21 @@ footer .container .noi-dung .about p {
     margin: auto;
   }
   .row1,
-.row2,
-.row3 {
-  height: 360px;
-  border-bottom: 2px solid #f03b09cc;
-  border-right: 2px solid #f03b09cc;
-}
-
-
-
+  .row2,
+  .row3 {
+    height: 360px;
+    border-bottom: 2px solid #f03b09cc;
+    border-right: 2px solid #f03b09cc;
+  }
 
   /* footer */
-  footer{
+  footer {
     display: none;
     justify-content: left;
-    
   }
   footer img {
     display: none;
   }
-
 
   #back {
     z-index: 100;
