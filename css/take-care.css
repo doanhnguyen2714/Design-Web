@@ -635,7 +635,7 @@ footer .container .noi-dung.about p {
 .slide {
   font-size: 20px;
 }
-.question {
+/* .question {
   width: auto;
   background-color: #ff7350;
   font-size: 20px;
@@ -643,11 +643,14 @@ footer .container .noi-dung.about p {
   border: 5px solid #f03b09cc;
   border-radius: 10px;
   margin-bottom: 10px;
+} */
+.question{
+  font-weight: 900;
 }
 
 .btn-submit {
-  width: 200px;
-  height: 80px;
+  width: 150px;
+  height: 60px;
   font-size: 30px;
   display: flex;
   justify-content: center;
